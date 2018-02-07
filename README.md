@@ -1,6 +1,6 @@
-# immutable-update
+# immutable-update-operation
 
-[![Build Status](https://api.travis-ci.org/umezo/immutable-update.svg?branch=master)](https://travis-ci.org/umezo/immutable-update)
+[![Build Status](https://api.travis-ci.org/umezo/immutable-update-operation.svg?branch=master)](https://travis-ci.org/umezo/immutable-update-operation)
 
 update structured variables immutably
 
@@ -8,7 +8,7 @@ update structured variables immutably
 ## Installation
 
 ```bash
-npm install immutable-update
+npm install immutable-update-operation
 ```
 
 
