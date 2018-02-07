@@ -1,6 +1,6 @@
 {
   "name": "immutable-update-operation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.js",
   "license": "MIT",
   "repository": {
@@ -23,8 +23,10 @@
     "test": "ava src/__test__/*"
   },
   "dependencies": {
-    "ava": "^0.25.0",
     "lodash.assign": "^4.2.0",
     "lodash.find": "^4.6.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0"
   }
 }
