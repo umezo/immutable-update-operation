@@ -1,0 +1,14 @@
+{
+  "name": "immutable-query",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava src/__test__/*"
+  },
+  "dependencies": {
+    "ava": "^0.25.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.find": "^4.6.0"
+  }
+}
