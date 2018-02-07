@@ -1,8 +1,24 @@
 {
   "name": "immutable-update-operation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umezo/immutable-update-operation.git"
+  },
+  "keywords": [
+    "immutable",
+    "update",
+    "index",
+    "key",
+    "function"
+  ],
+  "author": "umezo",
+  "bugs": {
+    "url": "https://github.com/umezo/immutable-update-operation/issues"
+  },
+  "homepage": "https://github.com/umezo/immutable-update-operation#readme",
   "scripts": {
     "test": "ava src/__test__/*"
   },
