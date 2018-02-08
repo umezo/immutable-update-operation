@@ -27,7 +27,6 @@ function update/*:: <T: Collection<any>>*/(collection/*: T*/, queryList/*: Query
       updateTarget = find(rootCollection, query);
       index = rootCollection.indexOf(updateTarget);
     } else {
-      console.log(rootCollection, query); // eslint-disable-line no-console, for development time message
       throw new Error(`query type must be number or function for Array. '${typeof query}' was given`);
     }
 
@@ -42,7 +41,6 @@ function update/*:: <T: Collection<any>>*/(collection/*: T*/, queryList/*: Query
     if (typeof query === 'string' || typeof query === 'number') {
       updateTarget = rootCollection[key];
     } else {
-      console.log(rootCollection, query); // eslint-disable-line no-console, for development time message
       throw new Error(`query type must be string or number for Obect. query '${typeof query}' was given`);
     }
 
