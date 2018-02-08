@@ -6,7 +6,7 @@ type Mapper<T> = (T) => T;
 */
 
 const assign = require('lodash.assign');
-const find = require('lodash.find');
+const findIndex = require('lodash.findindex');
 
 function update/*:: <T: Collection<any>>*/(collection/*: T*/, queryList/*: Query[]*/, mapper/*: Mapper<any>*/)/*: T*/ {
 
@@ -24,8 +24,8 @@ function update/*:: <T: Collection<any>>*/(collection/*: T*/, queryList/*: Query
       updateTarget = rootCollection[query];
       index = query;
     } else if (typeof query === 'function') {
-      updateTarget = find(rootCollection, query);
-      index = rootCollection.indexOf(updateTarget);
+      index = findIndex(rootCollection, query);
+      updateTarget = rootCollection[index];
     } else {
       throw new Error(`query type must be number or function for Array. '${typeof query}' was given`);
     }
